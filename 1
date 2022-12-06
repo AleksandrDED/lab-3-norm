@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-double log(double a, double b)
+double logar(double a, double b)
 {
     return log(b) / log(a);
 }
@@ -40,7 +40,7 @@ int main()
         file1 >> R;
         file1.close();
 
-        file3 << "X = " << log(a, R);
+        file3 << "X = " << logar(a, R);
         file3.close();
 
         if (R <= 0)
@@ -49,7 +49,7 @@ int main()
         }
 
 
-      cout << "x = " << log(a, R) << "Результат записан в stepen.txt";
+      cout << "x = " << logar(a, R) << "Результат записан в stepen.txt";
 
   
 
